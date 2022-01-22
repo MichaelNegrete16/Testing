@@ -7,6 +7,7 @@
 Es un proyecto sencillo que solo consta de un solo componente que en este caso tiene nombre de `users`, Aqui se hizo el diseño y se recibieron datos del `service`
 que tambien fue creado para la elaboracion de funcionalidad del proyecto
 
+[![Sin-t-tulo.png](https://i.postimg.cc/J00YnkfV/Sin-t-tulo.png)](https://postimg.cc/ZvkxsCYV)
 
 Se hizo uso de 3 funciones para este proyecto:
 
