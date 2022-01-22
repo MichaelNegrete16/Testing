@@ -25,7 +25,7 @@ Una vez ejecutado el programa se vere una interfaz con busqueda de usuario o cor
 
 [![Sin-t-tulo.png](https://i.postimg.cc/rs66vgdZ/Sin-t-tulo.png)](https://postimg.cc/hz03mL1V)
 
-La direccion de la `API` que fue usada en este caso es: `https://jsonplaceholder.typicode.com/users`, no se utilizo la `API` de `MOCKEN` ya que era una aplicacion de pagp
+La direccion de la `API` que fue usada en este caso es: `https://jsonplaceholder.typicode.com/users`, no se utilizo la `API` de `MOCKEN` ya que era una aplicacion de pago
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
