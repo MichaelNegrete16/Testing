@@ -8,9 +8,9 @@ export class UserServiceService {
   Api: string = 'https://jsonplaceholder.typicode.com/users'
   // UserFound: object = {}
   user: any = []
-
+  
   constructor(private http: HttpClient) { }
-
+  
   obtenerUser(){
      this.http.get(this.Api).subscribe(datos => this.user = datos)
 
@@ -31,11 +31,11 @@ export class UserServiceService {
     for(let i=0; i<this.user.length; i++){
       let userFound = this.user[i];
       let nombre = userFound.name.toLowerCase()
+      let email = userFound.email.toLowerCase()
       
       // let username = userFound.username.toLowerCase()
-      
 
-      if(nombre.indexOf(termino)>=0 ){
+      if(nombre.indexOf(termino)>=0 || email.indexOf(termino)>=0 ){
         userFound.idx = i;
         UserFound.push(userFound)
       }

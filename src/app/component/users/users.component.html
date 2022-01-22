@@ -1,9 +1,9 @@
-<p> {{test}} !</p>
+<!-- <p> {{test}} !</p> -->
 
-<input #inputUser type="text" placeholder="Buscar" (keyup.enter)="BuscarUser(inputUser.value)"  onkeyup="javascript:this.value=this.value.toLowerCase();">
+<!-- <input #inputUser type="text" placeholder="Buscar" (keyup.enter)="BuscarUser(inputUser.value)"  onkeyup="javascript:this.value=this.value.toLowerCase();"> -->
 
 <!--  -->
-<ul > 
+<!-- <ul > 
     <h1>Esto deberia cargar enseguida !</h1>
     <li *ngFor="let test of contenedorUser" > {{test.name}} </li>    
 </ul>
@@ -12,5 +12,62 @@
     <h1>Esperando data !</h1>
     <li *ngFor="let test of result" > {{test.email}} </li>    
 </ul>
+
+<h2>Hello</h2> -->
+
+<header>
+    <h1 class="text-center">Busqueda</h1>
+</header>
+
+<section class="principal-content">
+    <div class="row">
+        <div class="col">
+            <div class="content first">
+                <h2 class="text-center alert alert-primary">Ingresa el Nombre o Correo</h2>
+                <form action="#" id="add-Data">
+                    <div class="form-group form-floating mb-3">
+                        <input #inputUser type="text" class="form-control" id="floatingInput" placeholder="Buscar" (keyup.enter)="BuscarUser(inputUser.value)" onkeyup="javascript:this.value=this.value.toLowerCase();" >
+                        <label for="floatingInput">Buscar</label>
+                        <br>
+                        <button class="btn btn-primary text-center" type="submit">Buscar</button>
+                    </div>  
+                </form>
+
+            </div> <!--.contenido -->
+        </div><!-- .col -->
+
+        <div class="col">
+            <div class="content second">
+                <h2 class="text-center alert alert-success" >Listado</h2>
+                <div id="data">
+                    <ul class="list-group">
+                        <li *ngFor="let test of result" class="list-group-item d-flex justify-content-between aling-items-center">Nombre: {{test.name}}   -   Correo: {{test.email}}  </li>   
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-center" id="user">Lista de Usuarios</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let test of contenedorUser" class="table-active" >
+                <th scope="row"> {{test.id}} </th>
+                <td>{{test.name}}</td>
+                <td>{{test.username}}</td>
+                <td>{{test.email}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>
+</section>
 
 

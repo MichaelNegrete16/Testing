@@ -1,4 +1,25 @@
-# Test
+# Prueba Tecnica
+
+
+
+## Solucion
+
+Es un proyecto sencillo que solo consta de un solo componente que en este caso tiene nombre de "users", Aqui se hizo el diseño y se recibieron datos del service
+que tambien fue creado para la elaboracion de funcionalidad del proyecto
+
+
+Se hizo uso de 3 funciones para este proyecto;
+
+    obtenerUSer()
+    senData()
+    buscarUSer()
+
+Como sus nombre lo dicen, la primera funcion es para consumir la API y obtener los valores del JSON y guardarlos en un objeto
+La segunda funcion la usamos para retornar los datos de la API y poder usarla en el componente de user
+Y la funcion mas notoria de todas es la tercera que es donde se usa un poco mas de logica para buscar un usuario dependiendo de como lo busquemos,
+Si es por nombre o email, ya depende de como se requiera buscar
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
