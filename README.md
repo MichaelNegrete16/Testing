@@ -8,11 +8,11 @@ Es un proyecto sencillo que solo consta de un solo componente que en este caso t
 que tambien fue creado para la elaboracion de funcionalidad del proyecto
 
 
-Se hizo uso de 3 funciones para este proyecto;
+Se hizo uso de 3 funciones para este proyecto:
 
     `obtenerUSer()`
     `senData()`
-   `buscarUSer()`
+    `buscarUSer()`
 
 Como sus nombre lo dicen, la primera funcion es para consumir la `API` y obtener los valores del `JSON` y guardarlos en un objeto
 La segunda funcion la usamos para retornar los datos de la API y poder usarla en el componente de `users`
