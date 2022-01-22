@@ -1,0 +1,16 @@
+<p> {{test}} !</p>
+
+<input #inputUser type="text" placeholder="Buscar" (keyup.enter)="BuscarUser(inputUser.value)"  onkeyup="javascript:this.value=this.value.toLowerCase();">
+
+<!--  -->
+<ul > 
+    <h1>Esto deberia cargar enseguida !</h1>
+    <li *ngFor="let test of contenedorUser" > {{test.name}} </li>    
+</ul>
+
+<ul > 
+    <h1>Esperando data !</h1>
+    <li *ngFor="let test of result" > {{test.email}} </li>    
+</ul>
+
+
